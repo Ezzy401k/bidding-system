@@ -1,5 +1,5 @@
 day 9 of 100-day Python coding challenge,
-# Secret Auction Program
+# Secret bidding Program
 
 This Python program implements a secret auction where bidders can place bids anonymously for a specific item.
 
