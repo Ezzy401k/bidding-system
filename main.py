@@ -1,11 +1,16 @@
 import os
+import art
+import warnings
+warnings.filterwarnings("ignore")
 
 again = True
 while again:
     store = {}
     bidding = True
     peice = input("What are you Bidding on?:\n")
+    os.system('cls')
     while bidding:
+        print(art.logo)
         print(f"Welcome to the secret auction program for {peice}.")
         name = input("What is your name?:\n")
         bid = int(input("What's your bid?:\n$"))
@@ -35,7 +40,7 @@ while again:
                 elif store[items] == final[list]:
                     draw[items] = store[items]
                     draw[list] = final[list]
-
+    print(art.logo)
     if draw == {}:
         for list in final:
             print(f"The winner of bid for {peice} is {list} with a bid of {final[list]}$.")
@@ -43,7 +48,6 @@ while again:
         print(f"It is a draw with a bid of {draw[list]} and the bidders are:")
         for list in draw:
             print(f"{list}")
-
     yes = input("Do you want to Bid again?:\n'Yes' or 'no'")
     if yes == 'yes':
         again = True
