@@ -48,4 +48,4 @@ What are you Bidding on?:
 
 ## Author
 
-[Your Name](https://github.com/Ezzy401k)
+[Esrael Mekdem](https://github.com/Ezzy401k)
